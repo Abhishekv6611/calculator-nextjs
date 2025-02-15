@@ -6,7 +6,7 @@ export default function Home() {
   const[result,setResult]=useState('')
   const[expression,setExpression]=useState('')
 
-const handleClick=(value)=>{
+const handleClick=(value:string)=>{
   if(value==='='){
     try {
       const evalResult=eval(expression).toString()

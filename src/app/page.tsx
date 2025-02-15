@@ -13,6 +13,7 @@ const handleClick=(value:string)=>{
       setResult(evalResult)
       setExpression(evalResult)
     } catch (error) {
+      console.error(error);
       setResult('Error')
     }
   }else if(value==='C'){
